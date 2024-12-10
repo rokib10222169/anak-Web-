@@ -1,0 +1,186 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Global Container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header */
+header {
+  background: #003366;
+  color: #fff;
+  padding: 1px 0;
+  box-shadow: 0 2px 2px -2px rgb(252, 249, 249);
+}
+
+header .logo img {
+  width: 20em;
+  height: auto;
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 5px;
+  display: flex;
+}
+
+nav ul li a {
+  color: #4521e4;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+   background-image: url('images/kampus.png');
+   background-position: top left;
+   background-size: cover;
+   height: 50vh;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.hero p {
+  font-size: 2em;
+  color: #f4f4f4;
+}
+
+/* About Section */
+.about, .curriculum, .contact {
+  background-color: rgb(136, 4, 114);
+  padding: 0cm 0;
+  margin-bottom: 30em;
+  text-align: center;
+}
+
+.about h2, .curriculum h1, .contact h1 {
+  color: #e3e7eb;
+  font-size: 2.5em;
+  margin-bottom: 0px;
+}
+
+.about p, .curriculum p, .contact p {
+  font-size: 1.1em;
+  color: #f3efef;
+  line-height: 1.8;
+}
+
+.about ul, .curriculum ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.about li, .curriculum li {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.contact form {
+  width: 60%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.contact form label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact form button {
+  padding: 12px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+  background-color: #ddd;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: left ;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  .hero h1 {
+      font-size: 2em;
+  }
+
+  .about h2, .curriculum h1, .contact h1 {
+      font-size: 2em;
+  }
+
+  .contact form {
+      width: 90%;
+  }
+}
